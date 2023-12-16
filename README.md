@@ -8,7 +8,6 @@
 ## Books
 
 ## Videos
-* [What is 12-Factor App?](https://www.youtube.com/watch?v=1OhmRmMsGdQ)
 * [The ULTIMATE Guide to Spring Boot](https://www.youtube.com/watch?v=Nv2DERaMx-4)
 
 ## Modules
