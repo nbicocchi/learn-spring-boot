@@ -10,7 +10,7 @@ A *mock object* is a dummy implementation for an interface or a class. It allows
 
 This allows you to simplify the test setup.
 
-![](images/mockito-usage-visualization.png)
+![](images/m3-mockito-usage-visualization.png)
 
 Recent versions of Mockito can also mock static methods and final classes. See [Mockito limitations](https://github.com/mockito/mockito/wiki/FAQ#what-are-the-limitations-of-mockito) for an overview of the remaining limitations. Also private methods are not visible for tests, they can also not be mocked. See [private methods](https://github.com/mockito/mockito/wiki/Mockito-And-Private-Methods) for details.
 
@@ -121,9 +121,9 @@ Mockito allows to configure the return values of methods which are called on the
 
 ## Using `when().thenReturn()` and `when().thenThrow()`
 
-Mocks can return different values depending on arguments passed into a method. The `when(...​.).thenReturn(...​.)` method chain is used to specify a return value for a method call with pre-defined parameters.
+Mocks can return different values depending on arguments passed into a method. The `when().thenReturn()` method chain is used to specify a return value for a method call with pre-defined parameters.
 
-![](images/whenThenReturn.png)
+![](images/m3-whenThenReturn.png)
 
 You also can use methods like `anyString` or `anyInt` to define that dependent on the input type a certain value should be returned.
 
