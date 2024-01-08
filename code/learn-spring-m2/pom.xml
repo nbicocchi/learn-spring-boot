@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <description>Course Module 2</description>
+    <name>learn-spring-m2</name>
+
+    <groupId>com.baeldung</groupId>
+    <artifactId>learn-spring-m2</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>basics-of-java-configuration-and-the-spring-context-end</module>
+        <module>defining-beans-component-scanning-and-bean-annotations-end</module>
+        <module>lifecycle-of-a-bean-end</module>
+        <module>simple-wiring-and-injection-end</module>
+        <module>scopes-of-spring-beans-end</module>
+        <module>beanPostProcessor-and-beanFactoryPostProcessor-end</module>
+        <module>debugging-and-solving-wiring-exceptions-end</module>
+        <module>spring-application-context-end</module>
+        <module>spring-wiring-resource-and-inject-end</module>
+    </modules>
+
+</project>

@@ -1,0 +1,23 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <description>Course Module 5</description>
+    <name>learn-spring-m5</name>
+
+    <groupId>com.baeldung</groupId>
+    <artifactId>learn-spring-m5</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>what-is-spring-mvc-lesson-end</module>
+        <module>expanding-our-first-controller-end</module>
+        <module>decouple-controller-from-entities-end</module>
+        <module>decouple-controller-from-entities-mapstruct-end</module>
+        <module>intro-to-mapstruct-end</module>
+        <module>controller-basics-end</module>
+        <module>controller-urls-requestparam-end</module>
+        <module>exception-handling-end</module>
+    </modules>
+
+</project>
