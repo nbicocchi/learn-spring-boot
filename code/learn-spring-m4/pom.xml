@@ -20,6 +20,7 @@
         <module>pagination-and-sorting-support-end</module>
         <module>pagination-end</module>
         <module>sorting-end</module>
+        <module>using-mongodb-end</module>
     </modules>
 
 </project>
