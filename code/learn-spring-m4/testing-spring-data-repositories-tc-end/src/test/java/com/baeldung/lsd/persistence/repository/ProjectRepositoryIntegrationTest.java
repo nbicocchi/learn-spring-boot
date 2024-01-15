@@ -20,7 +20,7 @@ import org.testcontainers.containers.PostgreSQLContainer;
 class ProjectRepositoryIntegrationTest {
 
     static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>(
-            "postgres:16-alpine"
+            "postgres:latest"
     );
 
     @BeforeAll
