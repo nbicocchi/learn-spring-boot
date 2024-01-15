@@ -3,7 +3,7 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <description>Learn Spring - Spring Boot with Docker</description>
-    <name>spring-boot-with-docker-end</name>
+    <name>spring-with-docker-end</name>
 
     <groupId>com.baeldung</groupId>
     <artifactId>spring-with-docker-end</artifactId>
@@ -24,15 +24,6 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
-
-    <developers>
-        <developer>
-            <email>eugen@baeldung.com</email>
-            <name>Eugen Paraschiv</name>
-            <url>https://github.com/eugenp</url>
-            <id>eugenp</id>
-        </developer>
-    </developers>
 
     <dependencies>
         <dependency>
@@ -69,7 +60,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>com.baeldung/project-api:${project.version}</name>
+                        <name>com.baeldung/spring-with-docker-end:${project.version}</name>
                     </image>
                 </configuration>
                 <executions>
@@ -109,7 +100,7 @@
                 <version>3.4.0</version>
                 <configuration>
                     <to>
-                        <image>com.baeldung/project-api:${project.version}</image>
+                        <image>com.baeldung/spring-with-docker-end-jib:${project.version}</image>
                     </to>
                 </configuration>
             </plugin>
