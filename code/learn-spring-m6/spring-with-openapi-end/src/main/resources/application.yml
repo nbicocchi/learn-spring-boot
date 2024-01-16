@@ -1,0 +1,41 @@
+spring:
+  jpa:
+    defer-datasource-initialization: true
+    open-in-view: false
+
+springdoc:
+  api-docs.path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+
+api:
+  common:
+    version: 1.0.0
+    title: spring-with-openapi API
+    description: Description of the API...
+    termsOfService: Terms of Service...
+    license: Licence...
+    licenseUrl: https://www.usdebtclock.org/
+    externalDocDesc: https://www.usdebtclock.org/
+    externalDocUrl: https://www.usdebtclock.org/
+    contact:
+      name: Nicola Bicocchi
+      url: https://www.usdebtclock.org/
+      email: contact@mail.com
+  project:
+    get-project:
+      summary: "Get project summary..."
+      description: "Get project..."
+    get-projects:
+      summary: "Get projects summary..."
+      description: "Get projects..."
+    create-project:
+      summary: "Create project summary..."
+      description: "Create project..."
+    update-project:
+      summary: "Update project summary..."
+      description: "Update project..."
+    delete-project:
+      summary: "Delete project summary..."
+      description: "Delete project..."
