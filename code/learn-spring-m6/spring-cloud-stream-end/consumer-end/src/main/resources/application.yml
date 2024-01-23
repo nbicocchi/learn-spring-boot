@@ -1,0 +1,25 @@
+server.port: 8082
+
+app:
+  threadPoolSize: 10
+  taskQueueSize: 100
+
+spring.rabbitmq:
+  host: 127.0.0.1
+  port: 5672
+  username: guest
+  password: guest
+
+spring.cloud.function.definition: consumerFancy
+
+spring.cloud.stream:
+  defaultBinder: rabbit
+  default.contentType: application/json
+  # bindings.consumerFancy-in-0:
+  # destination: fancy
+  # group: fancyGroup
+
+---
+spring.config.activate.on-profile: docker
+spring.rabbitmq.host: rabbitmq
+
