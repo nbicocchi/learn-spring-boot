@@ -15,6 +15,8 @@
         <module>events-and-listeners-end</module>
         <module>spring-with-docker-end</module>
         <module>spring-with-openapi-end</module>
+        <module>spring-with-reactor-end</module>
+        <module>spring-cloud-stream-end</module>
     </modules>
 
 </project>
