@@ -25,13 +25,13 @@ public class MessageSender {
 
     @Scheduled(fixedRate = 1000)
     public void randomMessage() {
-        sendMessage("consumerFancy-in-0", Integer.toString(RANDOM.nextInt(100)));
+        sendMessage("message-out-0", Integer.toString(RANDOM.nextInt(100)));
     }
 
     private void sendMessage(String bindingName, String event) {
         LOG.debug("Sending message {} to {}", event, bindingName);
         Message<String> message = MessageBuilder.withPayload(event)
-                .setHeader("partitionKey", 0)
+                .setHeader("partitionKey", event)
                 .build();
         streamBridge.send(bindingName, message);
     }

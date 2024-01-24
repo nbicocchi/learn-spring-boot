@@ -14,22 +14,7 @@ public class MessageProcessorConfig {
     private static final Logger LOG = LoggerFactory.getLogger(MessageProcessorConfig.class);
 
     @Bean
-    public Function<String, String> toLowerCase() {
-            return event -> event.toLowerCase();
-    }
-
-    @Bean
-    public Function<String, String> toUpperCase() {
-        return event -> event.toUpperCase();
-    }
-
-    @Bean
-    public Consumer<String> consumerPlain() {
-        return event -> LOG.info(event);
-    }
-
-    @Bean
-    public Consumer<String> consumerFancy() {
+    public Consumer<String> messageProcessor() {
         return event -> LOG.info(String.format("--> %s", event));
     }
 }
