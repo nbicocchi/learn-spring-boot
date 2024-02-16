@@ -12,11 +12,15 @@ public class Project {
 
     private LocalDate dateCreated;
 
+    public Project() {
+    }
+
     public Project(Long id, String name, LocalDate dateCreated) {
-        if(Objects.isNull(id)) {
-            id = new Random().nextLong();
+        if(Objects.nonNull(id)) {
+            this.id = id;
+        } else {
+            this.id = new Random().nextLong();
         }
-        this.id = id;
         this.name = name;
         this.dateCreated = dateCreated;
     }
@@ -56,40 +60,18 @@ public class Project {
     }
 
     @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((dateCreated == null) ? 0 : dateCreated.hashCode());
-        result = prime * result + ((id == null) ? 0 : id.hashCode());
-        result = prime * result + ((name == null) ? 0 : name.hashCode());
-        return result;
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+        Project project = (Project) o;
+        return Objects.equals(id, project.id) && Objects.equals(name, project.name) && Objects.equals(dateCreated, project.dateCreated);
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        Project other = (Project) obj;
-        if (dateCreated == null) {
-            if (other.dateCreated != null)
-                return false;
-        } else if (!dateCreated.equals(other.dateCreated))
-            return false;
-        if (id == null) {
-            if (other.id != null)
-                return false;
-        } else if (!id.equals(other.id))
-            return false;
-        if (name == null) {
-            if (other.name != null)
-                return false;
-        } else if (!name.equals(other.name))
-            return false;
-        return true;
+    public int hashCode() {
+        return Objects.hash(id, name, dateCreated);
     }
 
     @Override
