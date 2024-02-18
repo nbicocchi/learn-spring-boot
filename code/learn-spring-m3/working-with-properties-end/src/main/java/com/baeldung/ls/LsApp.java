@@ -1,41 +1,34 @@
 package com.baeldung.ls;
 
-import java.time.LocalDate;
-
-import jakarta.annotation.PostConstruct;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
+import com.baeldung.ls.persistence.model.Project;
+import com.baeldung.ls.persistence.repository.IProjectRepository;
+import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.baeldung.ls.persistence.model.Project;
-import com.baeldung.ls.service.IProjectService;
+import java.time.LocalDate;
+import java.util.Random;
+import java.util.random.RandomGenerator;
 
 @SpringBootApplication
-public class LsApp {
+public class LsApp implements ApplicationRunner {
+    public static final RandomGenerator RND = RandomGenerator.getDefault();
 
-    private static final Logger LOG = LoggerFactory.getLogger(LsApp.class);
+    IProjectRepository projectRepository;
 
-    @Autowired
-    private IProjectService projectService;
-
-    @Value("${additional.info}")
-    private String additional;
+    public LsApp(IProjectRepository projectRepository) {
+        this.projectRepository = projectRepository;
+    }
 
     public static void main(final String... args) {
         SpringApplication.run(LsApp.class, args);
-        for (String arg : args) {
-            System.out.println(arg);
-        }
     }
 
-    @PostConstruct
-    public void postConstruct() {
-        LOG.info("Additional Property {}", additional);
-        Project project = new Project("My First Project", LocalDate.now());
-        projectService.save(project);
+    @Override
+    public void run(ApplicationArguments args) throws Exception {
+        projectRepository.save(new Project("P1", LocalDate.now()));
+        projectRepository.save(new Project("P2", LocalDate.now()));
+        projectRepository.save(new Project("P3", LocalDate.now()));
     }
 }

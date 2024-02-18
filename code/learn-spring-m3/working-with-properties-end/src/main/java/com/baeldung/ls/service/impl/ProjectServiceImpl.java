@@ -1,5 +1,6 @@
 package com.baeldung.ls.service.impl;
 
+import java.util.Collection;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,9 +16,18 @@ public class ProjectServiceImpl implements IProjectService {
     @Autowired
     private IProjectRepository projectRepository;
 
+    public ProjectServiceImpl(IProjectRepository projectRepository) {
+        this.projectRepository = projectRepository;
+    }
+
     @Override
     public Optional<Project> findById(Long id) {
         return projectRepository.findById(id);
+    }
+
+    @Override
+    public Collection<Project> findAll() {
+        return projectRepository.findAll();
     }
 
     @Override
