@@ -8,7 +8,7 @@ In this lesson, we’ll look at three common wiring exceptions and analyze how w
 -   _NoUniqueBeanDefinitionException_ \- this happens when there are multiple beans matching the one we want to wire in
 -   _BeanCurrentlyInCreationException_ \- this is an exception that usually appears when there is a circular dependency in the context
 
-The relevant module for this lesson is: [debugging-and-solving-wiring-exceptions-end](https://github.com/nbicocchi/spring-boot-course/tree/module2/debugging-and-solving-wiring-exceptions-end)
+The relevant module for this lesson is: [debugging-and-solving-wiring-exceptions-end](../code/learn-spring-m1/debugging-and-solving-wiring-exceptions-end)
 
 ## Problem 1: Spring Cannot Find the Requested Bean
 
