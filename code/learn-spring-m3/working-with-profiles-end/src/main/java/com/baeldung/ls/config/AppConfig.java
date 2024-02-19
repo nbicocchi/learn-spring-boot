@@ -22,6 +22,7 @@ public class AppConfig {
     void post() {
         LOG.info("Active Profiles: {}", environment.getActiveProfiles());
         LOG.info("Default Profiles: {}", environment.getDefaultProfiles());
+        LOG.info("other-service.address: {}", environment.getProperty("other-service.address"));
     }
 
     @Bean("beanA")
