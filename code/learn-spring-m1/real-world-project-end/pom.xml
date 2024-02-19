@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.baeldung</groupId>
-    <artifactId>real-world-project</artifactId>
+    <artifactId>real-world-project-end</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>real-world-project</name>
+    <name>real-world-project-end</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>21</java.version>
