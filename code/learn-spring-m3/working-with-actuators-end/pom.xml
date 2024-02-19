@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.baeldung</groupId>
-    <artifactId>actuators-end</artifactId>
+    <artifactId>working-with-actuators-end</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>actuators-end</name>
     <description>Demo project for Spring Boot</description>

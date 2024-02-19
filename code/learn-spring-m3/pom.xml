@@ -13,9 +13,9 @@
         <module>working-with-properties-end</module>
         <module>working-with-profiles-end</module>
         <module>working-with-logs-end</module>
-        <module>testing-framework-end</module>
-        <module>actuators-end</module>
+        <module>working-with-actuators-end</module>
         <module>spring-boot-auto-configuration-end</module>
+        <module>testing-framework-end</module>
     </modules>
 
 </project>
