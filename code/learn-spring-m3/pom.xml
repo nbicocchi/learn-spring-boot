@@ -12,10 +12,9 @@
     <modules>
         <module>working-with-properties-end</module>
         <module>working-with-profiles-end</module>
-        <module>logging-in-a-spring-boot-project-end</module>
-        <module>testing-framework-lesson-end</module>
+        <module>working-with-logs-end</module>
+        <module>testing-framework-end</module>
         <module>actuators-end</module>
-        <module>actuators-custom-health-end</module>
         <module>spring-boot-auto-configuration-end</module>
     </modules>
 
