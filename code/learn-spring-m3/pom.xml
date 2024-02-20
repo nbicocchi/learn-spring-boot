@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <description>Course Module 4</description>
+    <name>learn-spring-m4</name>
+
+    <groupId>com.baeldung</groupId>
+    <artifactId>learn-spring-m4</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>spring-data-jpa-setup-end</module>
+        <module>spring-data-jpa-repositories-end</module>
+        <module>spring-data-mongodb-setup-end</module>
+        <module>testing-spring-data-repositories-end</module>
+        <module>testing-spring-data-repositories-tc-end</module>
+        <module>derived-query-methods-end</module>
+        <module>save-delete-methods-end</module>
+        <module>pagination-and-sorting-end</module>
+
+    </modules>
+
+</project>
