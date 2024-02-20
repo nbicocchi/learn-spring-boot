@@ -11,9 +11,8 @@
 * [The ULTIMATE Guide to Spring Boot](https://www.youtube.com/watch?v=Nv2DERaMx-4)
 
 ## Modules
-* M1 - Getting Started
-* M2 - Dependency Injection and the Spring Context
-* M3 - Project Configuration
-* M4 - Persistence and Data Access
-* M5 - REST APIs
-* M6 - Advanced Features
+* M1 - Dependency Injection and the Spring Context
+* M2 - Project Configuration (Properties, Profiles, Logs)
+* M3 - Persistence and Data Access
+* M4 - REST APIs
+* M5 - Advanced Features
