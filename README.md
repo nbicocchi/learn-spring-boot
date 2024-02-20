@@ -4,8 +4,10 @@
 * [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 * [Java SE Development Kit](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 * [Spring Boot](https://spring.io/projects/spring-boot)
+* [Maven](https://maven.apache.org/)
 
 ## Books
+n/a
 
 ## Videos
 * [The ULTIMATE Guide to Spring Boot](https://www.youtube.com/watch?v=Nv2DERaMx-4)
