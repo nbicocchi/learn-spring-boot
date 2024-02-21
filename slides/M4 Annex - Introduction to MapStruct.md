@@ -77,9 +77,6 @@ public interface SimpleSourceDestinationMapper {
 
 Notice we did not create an implementation class for our _SimpleSourceDestinationMapper —_ because MapStruct creates it for us.
 
-
-### The Mapper Implementation (generated)
-
 We can trigger the MapStruct processing by executing an _mvn clean install_.
 
 This will generate the implementation class under _/target/generated-sources/annotations/_.
