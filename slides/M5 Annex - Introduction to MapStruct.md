@@ -3,7 +3,7 @@
 In this tutorial, we’ll explore the use of [MapStruct](http://www.mapstruct.org/), which is, simply put, a Java Bean mapper.
 This API contains functions that automatically map between two Java Beans. With MapStruct, we only need to create the interface, and the library will automatically create a concrete implementation during compile time.
 
-The relevant module for this lesson is: [mapstruct-introduction-end](../code/learn-spring-m5/intro-to-mapstruct-end)
+The relevant module for this lesson is: [intro-to-mapstruct-end](../code/learn-spring-m4/intro-to-mapstruct-end)
 
 
 ## MapStruct and Transfer Object Pattern

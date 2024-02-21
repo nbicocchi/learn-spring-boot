@@ -1,23 +1,22 @@
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <description>Course Module 5</description>
+    <description>Course Module 6</description>
     <name>learn-spring-m5</name>
 
     <groupId>com.baeldung</groupId>
-    <artifactId>learn-spring-m5</artifactId>
+    <artifactId>learn-spring-m6</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>what-is-spring-mvc-lesson-end</module>
-        <module>expanding-our-first-controller-end</module>
-        <module>decouple-controller-from-entities-end</module>
-        <module>decouple-controller-from-entities-mapstruct-end</module>
-        <module>intro-to-mapstruct-end</module>
-        <module>controller-basics-end</module>
-        <module>controller-urls-requestparam-end</module>
-        <module>exception-handling-end</module>
+        <module>spring-aop-in-practice-end</module>
+        <module>spring-expression-language-end</module>
+        <module>events-and-listeners-end</module>
+        <module>spring-with-docker-end</module>
+        <module>spring-with-openapi-end</module>
+        <module>spring-with-reactor-end</module>
+        <module>spring-cloud-stream-end</module>
     </modules>
 
 </project>
