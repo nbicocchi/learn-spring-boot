@@ -1,9 +1,9 @@
 package com.baeldung.other.persistence.repository;
 
+import com.baeldung.other.persistence.model.Project;
+
 import java.util.Collection;
 import java.util.Optional;
-
-import com.baeldung.other.persistence.model.Project;
 
 public interface IProjectRepository {
 

@@ -29,7 +29,7 @@ public class AppConfig {
     }
 
     @Bean
-    @Scope("singleton")
+    @Scope("prototype")
     public IProjectRepository singletonBean() {
         return new ProjectRepositoryImpl();
     }

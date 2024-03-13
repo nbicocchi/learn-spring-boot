@@ -24,6 +24,6 @@ public class LsApp {
 
     public static void main(final String... args) {
         ConfigurableApplicationContext context = SpringApplication.run(LsApp.class, args);
-        context.close();
+        //context.close();
     }
 }

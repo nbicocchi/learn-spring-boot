@@ -28,8 +28,8 @@ public class LsApp implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        projectRepository.save(new Project(RND.nextLong(), "P1", LocalDate.now()));
-        projectRepository.save(new Project(RND.nextLong(), "P2", LocalDate.now()));
-        projectRepository.save(new Project(RND.nextLong(), "P3", LocalDate.now()));
+        projectRepository.save(new Project("P1", LocalDate.now()));
+        projectRepository.save(new Project("P2", LocalDate.now()));
+        projectRepository.save(new Project("P3", LocalDate.now()));
     }
 }

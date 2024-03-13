@@ -4,14 +4,9 @@ import com.baeldung.other.persistence.model.Project;
 import com.baeldung.other.persistence.repository.IProjectRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
-@Repository
 public class ProjectRepositoryImpl implements IProjectRepository {
-
     private final List<Project> projects = new ArrayList<>();
 
     @Override
@@ -26,12 +21,15 @@ public class ProjectRepositoryImpl implements IProjectRepository {
 
     @Override
     public Project save(Project project) {
+        Project toSave = new Project(project);
+        if (Objects.isNull(toSave.getId())) {
+            toSave.setId(new Random().nextLong(1_000_000L));
+        }
         Optional<Project> existingProject = findById(project.getId());
         if (existingProject.isPresent()) {
             projects.remove(existingProject);
         }
-        Project newProject = new Project(project);
-        projects.add(newProject);
-        return newProject;
+        projects.add(toSave);
+        return toSave;
     }
 }

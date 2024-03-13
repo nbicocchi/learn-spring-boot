@@ -2,6 +2,7 @@ package com.baeldung.ls;
 
 import com.baeldung.ls.persistence.model.Project;
 import com.baeldung.ls.persistence.repository.IProjectRepository;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
@@ -13,8 +14,6 @@ import java.util.random.RandomGenerator;
 
 @SpringBootApplication
 public class LsApp implements ApplicationRunner {
-    public static final RandomGenerator RND = RandomGenerator.getDefault();
-
     IProjectRepository projectRepository;
 
     public LsApp(IProjectRepository projectRepository) {
@@ -27,8 +26,8 @@ public class LsApp implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        projectRepository.save(new Project(RND.nextLong(), "P1", LocalDate.now()));
-        projectRepository.save(new Project(RND.nextLong(), "P2", LocalDate.now()));
-        projectRepository.save(new Project(RND.nextLong(), "P3", LocalDate.now()));
+        projectRepository.save(new Project("P1", LocalDate.now()));
+        projectRepository.save(new Project("P2", LocalDate.now()));
+        projectRepository.save(new Project("P3", LocalDate.now()));
     }
 }
