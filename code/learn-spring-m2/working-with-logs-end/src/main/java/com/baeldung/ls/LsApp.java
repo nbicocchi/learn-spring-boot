@@ -14,8 +14,6 @@ import java.util.random.RandomGenerator;
 
 @SpringBootApplication
 public class LsApp implements ApplicationRunner {
-    public static final RandomGenerator RND = RandomGenerator.getDefault();
-
     IProjectService projectService;
 
     public LsApp(IProjectService projectService) {
@@ -28,8 +26,8 @@ public class LsApp implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        projectService.save(new Project(RND.nextLong(), "P1", LocalDate.now()));
-        projectService.save(new Project(RND.nextLong(), "P2", LocalDate.now()));
-        projectService.save(new Project(RND.nextLong(), "P3", LocalDate.now()));
+        projectService.save(new Project("P1", LocalDate.now()));
+        projectService.save(new Project("P2", LocalDate.now()));
+        projectService.save(new Project("P3", LocalDate.now()));
     }
 }

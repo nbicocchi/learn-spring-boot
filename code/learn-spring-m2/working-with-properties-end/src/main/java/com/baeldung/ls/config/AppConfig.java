@@ -18,6 +18,7 @@ public class AppConfig {
 
     @PostConstruct
     private void postConstruct(){
+        LOG.info("project prefix: {}", environment.getProperty("project.prefix"));
         LOG.info("project suffix: {}", environment.getProperty("project.suffix"));
     }
 }
