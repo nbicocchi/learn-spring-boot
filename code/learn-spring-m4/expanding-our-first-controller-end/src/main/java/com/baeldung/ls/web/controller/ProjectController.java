@@ -26,7 +26,7 @@ public class ProjectController {
 
     @GetMapping("/find")
     public Iterable<Project> findProjects(@RequestParam("name") String name) {
-        return  projectService.findByName(name);
+        return projectService.findByName(name);
     }
 
     @GetMapping(value = "/{id}")
