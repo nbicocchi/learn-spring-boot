@@ -119,7 +119,7 @@
                 <version>3.4.0</version>
                 <configuration>
                     <to>
-                        <image>com.baeldung/spring-with-docker-end-jib:${project.version}</image>
+                        <image>spring-with-docker-end-jib:${project.version}</image>
                     </to>
                 </configuration>
             </plugin>
