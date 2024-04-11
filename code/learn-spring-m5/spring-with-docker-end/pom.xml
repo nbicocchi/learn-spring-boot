@@ -87,6 +87,7 @@
                     </dependency>
                 </dependencies>
                 -->
+
             </plugin>
 
             <!-- The following enables graalvm native images -->
